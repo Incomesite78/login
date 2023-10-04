@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Ui</title>
+  <link rel="stylesheet" href="style.css">
+ <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+  <!-- Button to trigger the popup -->
+
+    <!-- Custom popup element -->
+    <div id="popup">
+        <p id="popupmass">This is a custom popup alert!</p>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true">
+    
+    
+    <div class="sign_up" id="sin">
+      
+      <from>
+      <label onclick="sty2()" id="sign" for="chk">SIGN UP</label>
+      <input type="text" name="txt" placeholder="Enter Name" required="">
+      <input type="email" name="email" placeholder="Enter Email" required="">
+      <input type="password" name="pass" placeholder="Enter Password" required="">
+      <input onclick="ck()" id="btn" type="submit" name="btn" value="SUBMIT">
+     </from>
+    </div>
+   
+   
+    
+    
+    <div class="login" id="log">
+      <from>
+      <label onclick="sty()" id="login" for="chk">Login</label>
+      <input type="text" name="txxt" placeholder="Enter Name" required="">
+      <input type="text" name="passs" placeholder="Enter Password" required="">
+      <input onclick="ck2()" id="btn" type="submit" name="btn" value="SUBMIT">
+      </from>
+    </div>
+    
+    
+  </div>
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+<script src="script.js"></script>
+</body>
+
+</html>
